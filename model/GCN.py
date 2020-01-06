@@ -20,7 +20,6 @@ import torch.nn.init as init
 from utils.module import GateNetwork,cummax,ONLSTMCell
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-
 class EmbeddingLayer(nn.Module):
     def __init__(self, g,num_nodes, h_dim,pretrained=None):
         super(EmbeddingLayer, self).__init__()

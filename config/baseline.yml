@@ -1,0 +1,40 @@
+word_dim: 300
+hidden_dim: 256
+relation_dim: 300
+batch_size: 256
+epoch: 100
+lr: 0.001
+margin: 0.1
+ns: 256
+patience: 5
+
+#data_dir: '/home/user_data55/lijh/pytorch-projects/meta-sent2vec/data/SimpleQuestions/10-fold-dataset-tsv'
+vocab_pth: '/home/user_data55/lijh/pytorch-projects/meta-sent2vec/data/SimpleQuestions/10-fold-dataset-tsv/vocab.pth'
+#relation_file: '/home/user_data55/lijh/pytorch-projects/meta-sent2vec/data/SimpleQuestions/10-fold-dataset-tsv/relation.id'
+#word_pretrained_pth: '/home/user_data55/lijh/pytorch-projects/meta-sent2vec/data/SimpleQuestions/10-fold-dataset-tsv/word_pretrained.pth'
+wup_data_dir: 'data/SQB'
+wup_word_pretrained_pth: 'data/word.emb.nre.npy'
+wup_relation_pretrained_pth: 'data/rel.emb.nre.txt'
+wup_relation_word_id_path: 'data/rel.word.id.npy'
+wup_relation_word_len_path: 'data/rel.word.len.npy'
+wup_word_voc_path: 'data/word.voc.pickle'
+wup_rel_voc_path: "data/rel.voc.pickle"
+subject2relation_path: 'data/subject2relation.pickle'
+freeze: False
+
+padding_idx: 0
+pad_token: '<pad>'
+unk_idx: 1
+unk_token: '<unk>'
+
+save_dir: '/home/user_data55/wangdq/model/relation_extraction/neg'
+
+
+
+#relation_pretrained_pth: '/home/user_data55/lijh/pytorch-projects/meta-sent2vec/data/transE/relation2vec.pth'
+
+#relation_adj_matrix_pth: ['/home/user_data55/lijh/pytorch-projects/meta-sent2vec/data/SimpleQuestions/10-fold-dataset-tsv/relation_graph_based_on_kb/relation_adj_matrix.pth']
+
+use_gcn: False
+fold: 10
+
